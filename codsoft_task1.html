@@ -1,0 +1,127 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styleforport.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <aside><h2 style="color: #ff004f;" >PRIYA</h2></aside>
+                <ul id ="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()" ></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB Designer</p>
+                <h1>Hi,I am <span>Priya</span><br> from Tamil Nadu</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+        <div clas="row">
+            <div class="about-col-1">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/038/974/578/small_2x/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>HELLO, I'm Priya I am from Tamil Nadu I'm a front end web developer</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id=""skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>App Development</span><br>Buliding Android Apps</li>
+                </ul></div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>App Development</span><br>Buliding Android Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                <ul>
+                <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>App Development</span><br>Buliding Android Apps</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">MY  SKILLS</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>HTML</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6935wo8bLZh5FeafJEffqWKDOpNpx6UE5bg&s">
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-web-awesome"></i>
+                        <h2>JAVASCRIPT</h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYvojrQH9ga-AHhE5bi4x0CuubfYWnPVYZTw&s">
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                            <h2>CSS</h2>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ94QxslC9tynjXWPJRP5IvvqHgYDhdBK2Af6AZzRXI0bJnEG-GY3jy0oO4yvSYAGJizxs&usqp=CAU">
+                            
+                        </div>
+            </div>
+        </div>
+    </div>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            </div>
+                           <center><a href="c:\Users\STAR COMPUTERS SPR\Downloads\L.Priya.pdf" download class="btn btn2">Download</a></center>
+                        <div class="contact-right">
+                            <form>
+                                <center><input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <input type="Message" name="Name" placeholder="Your Message" required>
+                                <button type="Submit" class="btn btn2">Submit</button></center>
+            </form>
+        </div>
+        </div>
+            </div>
+            <div class="copyright">
+                <p>copy right @Priya</p>
+                </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
